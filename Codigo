@@ -1,0 +1,95 @@
+# include<iostream>
+# include<stdlib.h>
+using namespace std;
+
+int main()
+{
+    //Calculadora simples com media
+
+    //variaveis
+    float escolha,num1,num2,multi,divi,dimi,adi,pausa;
+    char elementos[30];
+    int ii=0;
+    int tamanho=0;
+
+    escolha=0;
+
+
+
+
+    //loop do "menu" de escolha
+    while(escolha==0){
+    system("cls");
+    cout<<"Bem vindo usuario!"<<endl;
+    cout<<"Por favor escolha qual operaçao realizar:"<<"\n \n";
+
+    cout<<"1- Calculadora        2- Media"<<endl;
+    cout<<"3-sair"<<endl;
+
+    cin>>escolha;
+
+    //loop da calculadora
+    while(escolha==1){
+        system("cls");
+        cout<<"Bem vindo ao modo calculadora."<<endl;
+        cout<<"Por favor, digite o primeiro numero:"<<"\n";
+        cin>>num1;
+        system("cls");
+        cout<<"Por favor, digite o segundo numero:"<<"\n";
+        cin>>num2;
+        system("cls");
+
+        multi=num1*num2;
+        adi=num1+num2;
+        divi=num1/num2;
+        dimi=num1-num2;
+
+        cout<<num1<< " / "<<num2<<" = "<<divi<<endl;
+        cout<<num1<<" x "<<num2<< " = "<<multi<<endl;
+        cout<<num1<< " + "<<num2<<" = "<<adi<<endl;
+        cout<<num1<< " - "<<num2<<" = "<<dimi<<endl;
+
+        cout<<"Digite 1 para continuar, 2 para sair"<<endl;
+
+        cin>>pausa;
+
+        if(pausa==2){
+            escolha--;
+        }else{
+        system("cls");
+        }
+
+
+    }
+    //loop da media
+    while(escolha==2){
+        //kkk eu precisava de uma maneira de determinar a quantidade de elementos da media e por alguma razão
+        //eu resolvi tentar uma maneira que utilizasse matrizes, e saiu esse pecado ai.
+        //com certeza vou mudar isso depois
+        
+        system("cls");
+        cout<<"Insira uma quantidade de caracteres referente ao numero desejado de elementos da media"<<endl;
+        cout<<"exemplo: 'aaaaa' aqui estao 5 caracteres, logo o numero de elementos sera 5."<<endl;
+        cout<<"insira os caracteres:";
+        cin>>elementos;
+        while(elementos[ii] != '\0'){
+            ii++;
+            tamanho++;
+        }
+        for(int i=0; i<tamanho;i++)
+        {
+            
+            //aqui o programa vai tirar a media entre a quantidade de elementos inserida antes
+        }
+        
+        
+
+    }
+
+
+    system("pause");
+    return 0;
+    
+
+
+}
