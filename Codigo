@@ -64,7 +64,7 @@ int main()
     //loop da media
     while(escolha==2){
         //kkk eu precisava de uma maneira de determinar a quantidade de elementos da media e por alguma razão
-        //eu resolvi tentar uma maneira que utilizasse matrizes, e saiu esse pecado ai.
+        //eu resolvi tentar uma maneira que utilizasse vetores, e saiu esse pecado ai.
         //com certeza vou mudar isso depois
         
         system("cls");
